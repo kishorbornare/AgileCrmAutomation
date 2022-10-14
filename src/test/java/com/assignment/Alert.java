@@ -6,6 +6,11 @@ import org.testng.annotations.Test;
 import com.agilecrmautomation.BaseClass;
 
 public class Alert extends BaseClass {
+	
+public Alert() {
+}
+	
+	
 @Test(groups= {"regression"})
 
 	public  void main() {
@@ -27,7 +32,8 @@ public  void main2() {
 	driver.navigate().to("https://www.orangehrm.com/");
 	JavascriptExecutor  js=(JavascriptExecutor )driver;
 js.executeScript("prompt('This is smaple alert');");
-driver.switchTo().alert().accept();}
+driver.switchTo().alert().accept();
+ }
 
 
 
